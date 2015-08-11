@@ -1,11 +1,12 @@
 $(document).ready(function(){
   $('#justin').click(function(){
-    var counter = $('#baby').find('#view-counter').text();
+    var song = $('#baby')
+      counter = song.find('#view-counter').text();
     // inside of this css class, find the counter and return the text from that element
-    $('#baby').toggleClass('hidden');
-    if ($('#baby').attr('class') === 'song'){
+    song.toggleClass('hidden');
+    if (song.attr('class') === 'song') {
       counter ++ // implement the counter up by one
-      $('#baby').find('#view-counter').text(counter);
+      song.find('#view-counter').text(counter);
       // pass text var as a parameter to change it
     }
   });
